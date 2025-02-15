@@ -1,0 +1,52 @@
+configuration {
+	timeout {
+		action: "kb-cancel";
+		delay:  0;
+	}
+	filebrowser {
+		directories-first: true;
+		sorting-method:    "name";
+	}
+	show-icons: true;
+	terminal: "kitty";
+	display-drun: " Apps ";
+	display-run: " Run ";
+	display-window: " Window";
+	display-Network: " Network";
+	sidebar-mode: true;
+
+	kb-mode-complete: "";
+	kb-mode-next: "Control+l";
+	kb-mode-previous: "Control+h";
+	kb-row-up: "Up,Control+k";
+	kb-row-down: "Down,Control+j";
+
+	kb-remove-char-back: "BackSpace,Shift+BackSpace";
+	kb-remove-to-eol: "";
+	kb-accept-entry: "Return,KP_Enter";
+}
+
+@theme "./themes/catppuccin-mocha.rasi"
+
+* {
+	font: "Fira Code 10";
+}
+
+window {
+	height: 360px;
+	border-radius: 8px;
+}
+
+element {
+	orientation: horizontal;
+	children: [element-icon, element-text];
+	spacing: 10px;
+}
+
+element-icon {
+	size: 2.5em;
+}
+
+element-text {
+	vertical-align: 0.5;
+}
