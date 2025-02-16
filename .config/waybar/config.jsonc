@@ -16,7 +16,7 @@
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"persistent-workspaces": {
-			"*": 6
+			"*": 4
 		},
 		"show-special": true
 	},
@@ -30,13 +30,13 @@
 		"format": "{:%a, %d %b %I:%M%p}"
 	},
 	"pulseaudio": {
-		"format": " {volume}%"
+		"format": "  {volume}%"
 	},
 	"memory": {
 		"format": " {percentage}%"
 	},
 	"cpu": {
 		"interval": 1,
-		"format": " {usage}%"
+		"format": "  {usage}%"
 	}
 }
