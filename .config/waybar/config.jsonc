@@ -30,7 +30,18 @@
 		"format": "{:%a, %d %b %I:%M%p}"
 	},
 	"pulseaudio": {
-		"format": "  {volume}%"
+		"format": "{icon} {volume}%",
+		"format-muted": " 0%",
+		"format-icons": {
+			"headphone": "",
+			"phone": "",
+			"phone-muted": "",
+			"portable": "",
+			"default": [
+				"",
+				""
+			]
+		}
 	},
 	"memory": {
 		"format": " {percentage}%"
