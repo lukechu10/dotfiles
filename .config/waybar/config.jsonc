@@ -16,7 +16,7 @@
 	"hyprland/workspaces": {
 		"format": "{icon}",
 		"persistent-workspaces": {
-			"*": 4
+			"*": 5
 		},
 		"show-special": true
 	},
